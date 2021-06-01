@@ -1,0 +1,51 @@
+blinker==1.4
+brotlipy==0.7.0
+certifi==2020.12.5
+cffi @ file:///D:/bld/cffi_1613414034267/work
+chardet @ file:///D:/bld/chardet_1610093644405/work
+ChatterBot==1.0.8
+click==8.0.0
+colorama==0.4.4
+cryptography @ file:///D:/bld/cryptography_1616851687511/work
+cycler==0.10.0
+Flask==2.0.0
+Flask-Cors==3.0.10
+greenlet==1.1.0
+gunicorn==20.1.0
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1593328102638/work
+importlib-metadata==4.0.1
+itsdangerous==2.0.0
+Jinja2==3.0.0
+joblib==1.0.1
+jsonify==0.5
+kiwisolver==1.3.1
+MarkupSafe==2.0.0
+mathparse==0.1.2
+matplotlib==3.4.2
+numpy==1.20.3
+oauthlib==3.1.0
+pandas==1.2.4
+Pillow==8.2.0
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1593275161868/work
+PyJWT @ file:///home/conda/feedstock_root/build_artifacts/pyjwt_1619620644068/work
+pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1608055815057/work
+pyparsing==2.4.7
+PySocks @ file:///D:/bld/pysocks_1610291658292/work
+python-dateutil==2.8.1
+pytz==2021.1
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1608156231189/work
+requests-oauthlib @ file:///home/conda/feedstock_root/build_artifacts/requests-oauthlib_1595492159598/work
+scikit-learn==0.24.2
+scipy==1.6.3
+seaborn==0.11.1
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+sklearn-model==0.0.6
+SQLAlchemy==1.3.24
+threadpoolctl==2.1.0
+tweepy @ file:///home/conda/feedstock_root/build_artifacts/tweepy_1608988696003/work
+typing-extensions==3.10.0.0
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1615828766818/work
+Werkzeug==2.0.0
+win-inet-pton @ file:///D:/bld/win_inet_pton_1610147627696/work
+wincertstore==0.2
+zipp==3.4.1
