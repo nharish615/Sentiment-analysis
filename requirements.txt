@@ -4,12 +4,9 @@ blinker==1.4
 brotlipy==0.7.0
 bs4==0.0.1
 certifi==2020.12.5
-cffi @ file:///D:/bld/cffi_1613414034267/work
-chardet @ file:///D:/bld/chardet_1610093644405/work
 ChatterBot==1.0.8
 click==8.0.0
 colorama==0.4.4
-cryptography @ file:///D:/bld/cryptography_1616851687511/work
 cycler==0.10.0
 decorator==4.4.2
 Django==3.2.4
@@ -17,7 +14,6 @@ Flask==2.0.0
 Flask-Cors==3.0.10
 greenlet==1.1.0
 gunicorn==20.1.0
-idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1593328102638/work
 importlib-metadata==4.0.1
 itsdangerous==2.0.0
 Jinja2==3.0.0
@@ -32,10 +28,6 @@ nltk==3.6.2
 numpy==1.20.3
 oauthlib==3.1.0
 pandas==1.2.4
-Pillow==8.2.0
-pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1593275161868/work
-PyJWT @ file:///home/conda/feedstock_root/build_artifacts/pyjwt_1619620644068/work
-pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1608055815057/work
 pyparsing==2.4.7
 PySocks @ file:///D:/bld/pysocks_1610291658292/work
 python-dateutil==2.8.1
