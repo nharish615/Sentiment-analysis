@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+        <title>Restaurant Reviews Sentiment Analysis</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='res.jpg') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">RESTAURANT REVIEW SENTIMENT ANALYSIS</h2>
+			<br>
+			<a class="tb" href="/tweet"style="text-decoration:none">Tweeter Sentiment Review Analysis</a>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='safe'>Good Job!!! Positive Review</span></h1>
+				<img class="gif" src="{{ url_for('static', filename='possitive.gif') }}" alt="Positive Review">
+				<p>Positive</p>
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='danger'>Oh Oh...!!!Negative Review</span></h1>
+				<img class="gif" src="{{ url_for('static', filename='negative.gif') }}" alt="Negative Review">
+				<p>Negative</p>
+			{% endif %}
+				
+		</div>
+		<div align="center"> 
+	<a href="/" class="back"style="text-decoration:none">Back</a>
+		</div>
+		<!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/nharish615"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/harish-n-63034817a/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Harish N ©2021</p>
+       </div>
+
+    </body>
+</html>
