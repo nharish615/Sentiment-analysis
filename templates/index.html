@@ -17,13 +17,13 @@
             <h2 class='container-heading'><span class="heading_font">Sentiment Reviews  Analysis</h2><br>
             <div class='description'>
     			<p>Please write your review in the box to check whether the review was Good or Bad</p>
-				<a class="tb" href="/tweet"style="text-decoration:none">Tweeter Sentiment Review Analysis</a>
+				<a class="tb" href="https://hnsentiment-analysis-api.herokuapp.com/tweet"style="text-decoration:none">Tweeter Sentiment Review Analysis</a>
     		</div>
     	</div>
 
         <!-- Text Area -->
     	<div class="ml-container">
-    		<form action="{{ url_for('predict') }}" method="POST">
+    		<form action="https://hnsentiment-analysis-api.herokuapp.com/predict" method="POST">
         		<textarea class='message-box' name="message" rows="15" cols="75" placeholder="Enter Your Review Here... like 'great food', 'food was awesome', 'didn't know what all the hype was about', or 'worst ever dinner date' etc.  "></textarea><br/>
         		<input type="submit" class="my-cta-button" value="Predict">
         	</form>
