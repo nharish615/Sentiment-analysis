@@ -4,7 +4,6 @@ blinker==1.4
 brotlipy==0.7.0
 bs4==0.0.1
 certifi==2020.12.5
-ChatterBot==1.0.8
 click==8.0.0
 colorama==0.4.4
 cycler==0.10.0
