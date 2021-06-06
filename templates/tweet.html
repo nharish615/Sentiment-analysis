@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Twitter Reviews Sentiment Analysis</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='front.jpg') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">TWITTER REVIEW SENTIMENT ANALYSIS</h2>
+            <div class='description'>
+    			<p>Please write what you want Search</p></br>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="/tweet_result" method="POST">
+        		<textarea class='message-box' name="message" rows="15" cols="75" placeholder="Please write what you want Search"></textarea><br/>
+        		<input type="submit" class="my-cta-button" value="Extract Tweets">
+        	</form>
+    	</div>
+        <!-- Footer -->
+       <div class='footer'>
+	   <a class="tb" href="/"style="text-decoration:none">Sentiment Review Analysis By User Input</a>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/nharish615"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/harish-n-63034817a/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Harish N ©2021</p>
+       </div>
+
+    </body>
+</html>
