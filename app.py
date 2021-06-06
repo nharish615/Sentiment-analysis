@@ -14,8 +14,7 @@ import re
 pos=0
 neg=0
 neu=0
-with open('pickles/mnb_classifier.pickle', 'rb') as data:
-    model = pickle.load(data)
+
 #methods
 def cleanText(text):
 	text=re.sub(r'@[A-Za-z0-9]+','',text)#remove @ symbl
@@ -107,7 +106,7 @@ def predict():
         if os.path.exists("static/pie.png"):
             os.remove("static/pie.png")
         message = request.form['message']
-        data = cleanText(message)
+        data = cleanText(['message'])
         sente=sentiment(data)
         sent=0
         nn=0
@@ -125,8 +124,8 @@ def predict():
         elif(po > ne and po>nn):
             sent=1
         else:
-            sent=0
-        return render_template('result.html', prediction=sent)
+            pass
+        return render_template('static/result.html', prediction=sent)
 
 @app.route('/tweet_result', methods=['POST'])
 def tweet_result_():
@@ -170,7 +169,7 @@ def tweet_result_():
             pass
         plt.close()
         #return render_template('tweet_result.html', tweets=df['Tweets'],results=df['Analysis'])
-        return render_template('tweet_result.html', tweets=df,leng=len(df),topic=message)
+        return render_template('static/tweet_result.html', tweets=df,leng=len(df),topic=message)
 
 
 if __name__ == '__main__':
