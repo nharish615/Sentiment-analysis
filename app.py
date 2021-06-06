@@ -14,9 +14,8 @@ import re
 pos=0
 neg=0
 neu=0
-with open('pickles/mnb_classifier.pickle', 'rb') as data:
-    model = pickle.load(data)
-#methods
+
+
 def cleanText(text):
 	text=re.sub(r'@[A-Za-z0-9]+','',text)#remove @ symbl
 	text=re.sub(r'#','',text)#removing hash tag
