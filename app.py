@@ -56,7 +56,9 @@ with open("words_positive.csv", "r") as file:
     reader = csv.reader(file)
     for row in reader:
         positive.append(row)
-
+	
+	
+nltk.download('punkt')
 def sentiment(text):
     temp = [] #
     text_sent = nltk.sent_tokenize(text)
